@@ -1,3 +1,6 @@
+/**h2, p, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}**/
 .header {
   background-color: #f62ab5;
 }
@@ -140,5 +143,25 @@
   -webkit-transform: translateX(30%);
           transform: translateX(30%);
   margin-top: -6%;
+}
+
+.sponsorDiv {
+  margin: 30px auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 37.9%;
+  float: right;
+  background-color: #f62ab5;
+  margin-right: 1%;
+  margin-top: 1%;
+  -webkit-transform: translateY(-140%);
+          transform: translateY(-140%);
+  text-align: center;
+}
+
+footer {
+  background-color: #f62ab5;
+  text-align: center;
+  margin-top: 10%;
 }
 /*# sourceMappingURL=main.css.map */
