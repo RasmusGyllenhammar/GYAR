@@ -51,22 +51,13 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.div1{
-    grid-area: 1 / 1 / 2 / 6;
-}
+//bildspelet
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 150%;
     position: relative;
     margin: auto;
     padding-top: 1%;
+    float: left; // gör så att den kommer vänster om
     
 }
 
@@ -80,19 +71,20 @@
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: -7%;
     padding: 16px;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+   
+  
 }
 
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+    margin-right: -10%;
     
 }
 
@@ -103,6 +95,31 @@
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(238, 58, 67, 100);
+    background-color: $pink;
 
 }
+.grid-right{
+    grid-area: right;
+    float: right;
+    background-color: orange;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.match{
+    border-style: solid;
+    border-color: $pink;
+    text-align: center;
+    padding: 1%;
+}
+.nextMatch{
+    text-align: center;
+}
+.newsOne{
+    border-style: solid;
+    border-color: $pink;
+    
+}
+.bottom-right{
+    
+}
+  
