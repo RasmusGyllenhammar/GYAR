@@ -101,25 +101,39 @@
 .grid-right{
     grid-area: right;
     float: right;
-    background-color: orange;
+    background-color: $pink;
     margin-right: 1%;
     margin-top: 1%;
 }
 .match{
-    border-style: solid;
-    border-color: $pink;
+    @include pinkBorder();
     text-align: center;
     padding: 1%;
 }
 .nextMatch{
     text-align: center;
-}
-.newsOne{
-    border-style: solid;
-    border-color: $pink;
     
 }
-.bottom-right{
+.news{
+   // @include pinkBorder();
+
+   
+   
     
 }
-  
+
+  .news img{
+      margin-right: 4%;
+  }
+  .newsTwo{
+   // @include pinkBorder();
+    width: 50%;
+  }
+.newsText{
+    transform: translateX(30%);
+    margin-top: -6%;
+}
+.newsTextTwo{
+    transform: translateX(30%);
+    margin-top: -6%;;
+}
