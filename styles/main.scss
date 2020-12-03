@@ -4,6 +4,16 @@
 /**h2, p, h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
 }**/
+.indexbody{
+    background-color: rgba(211, 70, 70, 0.2);
+//background-color: $pink;
+}
+}
+footer{
+   background-color: $pink;
+    text-align: center; 
+    margin-top: 10%;
+}
 .header{
     background-color: $pink;
 
@@ -150,8 +160,6 @@
     border: rgba(48, 97, 143, 0.2);
     border-style: solid;
 }
-
-
 .sponsorDiv{
     
     border-collapse: collapse;
@@ -167,8 +175,11 @@
     text-align: center;
   
 }
-footer{
-   background-color: $pink;
-    text-align: center; 
-    margin-top: 10%;
+
+//HÄR BÖRJAR Nyheter SIDAN
+.news-one{
+    display: inline;
+    max-width: 50%;
+    border: rgba(0,0,255,1.0);
+    border-style:solid ;
 }

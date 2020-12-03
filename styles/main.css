@@ -1,6 +1,10 @@
 /**h2, p, h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
 }**/
+.indexbody {
+  background-color: rgba(211, 70, 70, 0.2);
+}
+
 .header {
   background-color: #f62ab5;
 }
