@@ -5,10 +5,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
 }**/
 .indexbody{
-    background-color: rgba(211, 70, 70, 0.2);
+  //  background-color: rgba(211, 70, 70, 0.2);
 //background-color: $pink;
+background-image: url(hall.jpg);
+height: 100%;
+
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
 }
-}
+
 footer{
    background-color: $pink;
     text-align: center; 
@@ -171,9 +177,17 @@ footer{
     background-color: $pink;
     margin-right: 1%;
     margin-top: 1%;
-    transform: translateY(-120%);
+    transform: translateY(-105%);
     text-align: center;
   
+}
+.map{
+    position: absolute;
+    right: 18%;
+    transform: translateY(-230%);
+    border: black;
+    border-style: solid;
+
 }
 
 //HÄR BÖRJAR Nyheter SIDAN
