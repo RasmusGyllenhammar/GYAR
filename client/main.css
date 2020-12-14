@@ -1,102 +1,216 @@
-header {
-  background-color: rgba(219, 40, 40, 0.774);
-}
-
-ul {
-  margin-left: 60%;
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
-  font-size: 20px;
-}
-
-ul a {
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.836);
-  padding: 2%;
-}
-
-ul a:hover {
-  background-color: rgba(255, 255, 255, 0.836);
-  font-style: italic;
-  color: rgba(219, 40, 40, 0.774);
-}
-
-li {
-  display: inline;
-}
-
-body {
-  background-image: url("stadium.jpg");
-  background-repeat: no-repeat;
+/**h2, p, h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}**/
+.indexbody {
+  background-image: url(hall.jpg);
+  height: 100%;
   background-position: center;
   background-size: cover;
-}
-
-.infotext {
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.836);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgba(219, 40, 40, 0.774);
-}
-
-.bild {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5%;
-}
-
-.textOne {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.836);
-  background-color: rgba(219, 40, 40, 0.774);
-}
-
-.secondBild {
-  margin-top: 5%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.headerText {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-}
-
-.logo {
-  margin-right: 90%;
+  background-attachment: fixed;
 }
 
 footer {
-  background-color: rgba(219, 40, 40, 0.774);
+  background-color: #f62ab5;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.header {
+  background-color: #f62ab5;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu {
+  margin-left: 20%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120%;
+}
+
+.nav-link {
+  padding: 0.8rem 1.5rem;
+}
+
+.menu a {
+  font-size: 100%;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f62ab5;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.slideshow-container {
+  max-width: 50%;
+  margin: auto;
+  margin-left: 15%;
+  padding-top: 1%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  margin-top: -7%;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 40.6%;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  margin-left: 16%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #f62ab5;
+}
+
+.grid-right {
+  width: 20%;
+  position: absolute;
+  right: 17%;
+  background-color: #f62ab5;
+  margin-right: 1%;
   margin-top: 1%;
+  -webkit-transform: translateY(-147%);
+          transform: translateY(-147%);
+}
+
+.match {
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  padding: 1%;
+}
+
+.nextMatch {
   text-align: center;
 }
 
-footer h1:hover {
-  background-color: rgba(255, 255, 255, 0.836);
-  font-style: italic;
-  color: rgba(219, 40, 40, 0.774);
+.news {
+  background-color: #f62ab5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 45%;
+  margin: auto;
+  margin-left: 15%;
+}
+
+.elliot, .kalle {
+  text-align: center;
+}
+
+.kalle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 3%;
+  border: rgba(48, 143, 48, 0.2);
+  border-style: solid;
+}
+
+.elliot {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+  border: rgba(48, 97, 143, 0.2);
+  border-style: solid;
+}
+
+.sponsorDiv {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 20%;
+  position: absolute;
+  right: 17%;
+  background-color: #f62ab5;
+  margin-right: 1%;
+  margin-top: 1%;
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
+  text-align: center;
+}
+
+.map {
+  position: absolute;
+  right: 18%;
+  -webkit-transform: translateY(-230%);
+          transform: translateY(-230%);
+  border: black;
+  border-style: solid;
+}
+
+.news-one {
+  display: inline;
+  max-width: 50%;
+  border: blue;
+  border-style: solid;
+}
+
+.navbar-dark {
+  background-color: #f62ab5;
+}
+.navbar-brand{
+  margin-left: 40%;
 }
 /*# sourceMappingURL=main.css.map */

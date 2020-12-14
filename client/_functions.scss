@@ -1,0 +1,13 @@
+@mixin pinkBorder(){
+    border-style: solid;
+    border-color: black;
+}
+
+@mixin navbar(){
+
+}
+
+@mixin justifyContentSpaceAroundAndDisplayFlex(){
+    justify-content: center;
+    display: flex;
+}

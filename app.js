@@ -14,6 +14,8 @@ const messages = []
 
 app.use(express.static(staticDir)) //alla statiska filer ligger i mappen i client
 
+
+
 app.use(express.json()) //gör så att man kan skicka post
 app.use(express.urlencoded())
 
@@ -26,7 +28,7 @@ app.get('/index', (req, res) => { // för nya ejs
 
 app.post('/index', function (req, res) { //request och response
   //res.send(req.body.message) tar en till ny sida med meddelandet
-  res.render('pages/index.ejs', {message: req.body.message}) //Kommer redirecta en till start sidan efter man skickar meddelande
+  res.render('pages/index.ejs', {message: req.body.message}) //Kommer redirecta en till start sidan efter man skickar meddelande med meddelandet
 
   const message = MessageModel.createMessage(req.body.email, req.body.message)  
 
@@ -39,6 +41,12 @@ app.get('/liverpool', (req, res) => {
   res.render('pages/liverpool.ejs')
   
 })
+
+app.get('/', (req, res) => {
+  res.render('pages/test.ejs')
+  
+})
+
 
 
 
