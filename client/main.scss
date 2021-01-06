@@ -199,8 +199,37 @@ footer{
 }
 //bootstrap
 .navbar-dark{
-    background-color: $pink4;
+    background-color: $pink;
 }
+.bg-dark{
+    background-color: $pink;
+}
+.carousel{
+    width: 100%;
+    margin-left: 0%;
+    
+    
+}
+
+.carousel-item{
+    width: 100%;
+}
+
+.card{
+    
+    margin-left: 4em;
+}
+.sponsorer{
+    margin-left: 3em;
+    margin-top: 0%;
+}
+
+/* footer färg*/
+.bg-light{
+    background-color: $pink;
+}
+
+
 
 
 
