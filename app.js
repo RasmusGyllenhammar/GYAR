@@ -46,7 +46,9 @@ app.get('/', (req, res) => {
   res.render('pages/test.ejs')
   
 })
-
+app.get('/nyheter', (req, res) => {
+  res.render('pages/nyheter.ejs')
+})
 
 
 

@@ -238,4 +238,28 @@ footer {
 .bg-light {
   background-color: #f62ab5;
 }
+
+.startbody {
+  background-color: #d43131;
+}
+
+@media screen and (max-width: 500px) {
+  .startbody {
+    background-color: #d43131;
+  }
+  .sponsorer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* här gör det så att de hamnar under varandra istället för bredvid varandra*/
+  .col-6 {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    margin-left: 3%;
+    padding: 2%;
+    margin-top: 2%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
