@@ -265,6 +265,15 @@ footer {
   background-color: #f62ab5;
 }
 
+/* kontant börjar här*/
+.kontakttext {
+  color: white;
+}
+
+.kontaktbody {
+  background-color: #c52291;
+}
+
 .nav-item {
   font-size: 120%;
 }
