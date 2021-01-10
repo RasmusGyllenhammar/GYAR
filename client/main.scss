@@ -4,84 +4,95 @@
 /**h2, p, h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
 }**/
-.indexbody{
-  //  background-color: rgba(211, 70, 70, 0.2);
-//background-color: $pink;
-background-image: url(hall.jpg);
-height: 100%;
+.indexbody {
+    //  background-color: rgba(211, 70, 70, 0.2);
+    //background-color: $pink;
+    background-image: url(hall.jpg);
+    height: 100%;
 
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-footer{
-   background-color: $pink;
-    text-align: center; 
+footer {
+    background-color: $pink;
+    text-align: center;
     margin-top: 10%;
 }
-.header{
+
+.header {
     background-color: $pink;
 
 }
-.menu li{
+
+.menu li {
     display: inline;
 }
-.menu{
+
+.menu {
     margin-left: 20%;
     transform: translateY(-20%);
     display: flex;
-   
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 120%;
 }
-.nav-link{
+
+.nav-link {
     padding: 0.8rem 1.5rem;
 }
-.menu a{
+
+.menu a {
     font-size: 100%;
-    color:black;
+    color: black;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+}
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color:$pink;}
+.dropdown-content a:hover {
+    background-color: $pink;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 
 //bildspelet
 .slideshow-container {
     max-width: 50%;
-    
+
     margin: auto;
     margin-left: 15%;
     padding-top: 1%;
     // gör så att den kommer vänster om
-    
+
 }
 
 .mySlides {
@@ -100,15 +111,15 @@ footer{
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-   
-  
+
+
 }
 
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
     margin-right: 40.6%;
-    
+
 }
 
 .prev {
@@ -122,56 +133,65 @@ footer{
     background-color: $pink;
 
 }
-.grid-right{
+
+.grid-right {
     width: 20%;
-   // float: right;
-   position: absolute;
-   right: 17%;
+    // float: right;
+    position: absolute;
+    right: 17%;
     background-color: $pink;
     margin-right: 1%;
     margin-top: 1%;
     transform: translateY(-147%);
-    
+
 }
-.match{
+
+.match {
     @include pinkBorder();
     text-align: center;
     padding: 1%;
 }
-.nextMatch{
+
+.nextMatch {
     text-align: center;
-    
+
 }
-.news{
-   // @include pinkBorder();
+
+.news {
+    // @include pinkBorder();
     background-color: $pink;
     display: flex;
     max-width: 45%;
-    margin:auto;
+    margin: auto;
     margin-left: 15%;
-    
+
 }
-.elliot, .kalle{
+
+.elliot,
+.kalle {
     text-align: center;
 }
-.kalle{
+
+.kalle {
     flex: 1;
     padding: 3%;
     border: rgba(48, 143, 48, 0.2);
     border-style: solid;
 }
-.elliot{
-    flex:1;
+
+.elliot {
+    flex: 1;
     margin-right: 20px;
     border: rgba(48, 97, 143, 0.2);
     border-style: solid;
 }
-.sponsorDiv{
-    
+
+.sponsorDiv {
+
     border-collapse: collapse;
     border: 2px solid black;
     width: 20%;
-   
+
     position: absolute;
     right: 17%;
     background-color: $pink;
@@ -179,9 +199,10 @@ footer{
     margin-top: 1%;
     transform: translateY(-105%);
     text-align: center;
-  
+
 }
-.map{
+
+.map {
     position: absolute;
     right: 18%;
     transform: translateY(-230%);
@@ -191,64 +212,98 @@ footer{
 }
 
 //HÄR BÖRJAR Nyheter SIDAN
-.news-one{
+.news-one {
     display: inline;
     max-width: 50%;
-    border: rgba(0,0,255,1.0);
-    border-style:solid ;
+    border: rgba(0, 0, 255, 1.0);
+    border-style: solid;
 }
+
 //bootstrap
-.navbar-dark{
+.navbar-dark {
     background-color: $pink;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: $pink;
 }
-.carousel{
+
+.carousel {
     width: 100%;
     margin-left: 0%;
-    
-    
+
+
 }
 
-.carousel-item{
+.carousel-item {
     width: 100%;
 }
 
-.card{
-    
+.card {
+
     margin-left: 4em;
 }
-.sponsorer{
+
+.sponsorer {
     margin-left: 3em;
     margin-top: 0%;
 }
 
 /* footer färg*/
-.bg-light{
+.bg-light {
     background-color: $pink;
 }
-.startbody{
-    background-color: rgb(212, 49, 49);
+
+.startbody {
+
+    background-color: rgb(197, 34, 145);
+
+}
+
+/*Nyheter*/
+.container-fluid {
+    display: inline-block;
+}
+
+.newstext {
+    float: right;
+
+}
+
+.newstext p {
+    color: white;
+}
+
+.newstext h3 {
+    color: white;
+}
+
+.newsbody {
+    background-color: $pink;
+}
+
+.nav-item {
+    font-size: 120%;
 }
 
 
-@media screen and (max-width: 500px){
-    .startbody{
+@media screen and (max-width: 500px) {
+    .startbody {
         background-color: rgb(212, 49, 49);
     }
 
-    .sponsorer{
-        margin-left:auto;
-        margin-right:auto;
-        
+    .sponsorer {
+        margin-left: auto;
+        margin-right: auto;
+
     }
+
     /* här gör det så att de hamnar under varandra istället för bredvid varandra*/
-    .col-6{
-        margin-left:auto;
-        margin-right:auto;
-        height:auto; 
-        width:auto;
+    .col-6 {
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: auto;
         margin-left: 3%;
         padding: 2%;
         margin-top: 2%;
@@ -258,4 +313,3 @@ footer{
 
 
 //test
-

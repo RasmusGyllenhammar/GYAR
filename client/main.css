@@ -156,7 +156,8 @@ footer {
   margin-left: 15%;
 }
 
-.elliot, .kalle {
+.elliot,
+.kalle {
   text-align: center;
 }
 
@@ -240,7 +241,32 @@ footer {
 }
 
 .startbody {
-  background-color: #d43131;
+  background-color: #c52291;
+}
+
+/*Nyheter*/
+.container-fluid {
+  display: inline-block;
+}
+
+.newstext {
+  float: right;
+}
+
+.newstext p {
+  color: white;
+}
+
+.newstext h3 {
+  color: white;
+}
+
+.newsbody {
+  background-color: #f62ab5;
+}
+
+.nav-item {
+  font-size: 120%;
 }
 
 @media screen and (max-width: 500px) {
