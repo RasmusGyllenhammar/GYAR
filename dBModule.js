@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/WebbRepition', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/GyAr', {useNewUrlParser: true});
 
 const db = mongoose.connection;
 //kollar ifall man har connect
@@ -10,7 +10,7 @@ db.once('open', function(){ //Callback, anropar när den är färdig
 });
 
 
-exports.Store = (input) => { //tar in en viss grej input/element och anropar funktion save till det objektet
+exports.Store = (input) => { //tar in en viss input/element och anropar funktion save till det objektet
     input.save(() => {
         console.log("kung du kom in")
     })

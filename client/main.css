@@ -250,7 +250,7 @@ footer {
 }
 
 .newstext {
-  float: right;
+  text-align: center;
 }
 
 .newstext p {
@@ -272,6 +272,23 @@ footer {
 
 .kontaktbody {
   background-color: #c52291;
+}
+
+.list-group-item-danger {
+  background-color: #f62ab5;
+}
+
+.kontakt-herr {
+  margin-top: 5%;
+}
+
+/*KLUBB*/
+.classForMessages {
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  border-style: solid;
+  border-color: red;
 }
 
 .nav-item {

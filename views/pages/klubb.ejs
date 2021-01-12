@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/"><img src="ibkUtbySvart.png" style="width: 5%; height: 5%;"></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Start</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Herr</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item" href="nyheter">nyheter</a>
+                <a class="dropdown-item" href="#">trupp</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nyheter">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="klubb">Klubb</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kalender">Kalender</a>
+            </li>
+    
+          </ul>
+    
+        </div>
+      </nav>
+
+
+
+
+    <form action="/klubb" method="post">
+        <input type="email" name="email" id="">
+    <input type="text" name="message">
+    <button type="submit">Skicka post</button>
+    </form>
+    
+    
+    <div class="classForMessages">
+        <h1>MessageBoard:</h1>
+        <% for(let i = 0; i < message.length; i++) { %>
+         
+            <p> <%= message[i].email %> skrev: <br> <%= message[i].text %></p>
+           
+           
+        <% } %> 
+        
+    </div>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
