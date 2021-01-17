@@ -284,20 +284,52 @@ footer {
 
 /*KLUBB*/
 .classForMessages {
-  width: 50%;
-  margin: auto;
-  margin-top: 5rem;
+  width: 90%;
+  /* FÅR ändra till 100% till mobil sen*/
+  margin-top: 2rem;
   border-style: solid;
-  border-color: red;
+  border-color: #f62ab5;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: white;
+}
+
+.message-form {
+  width: 90%;
+  /* får ändra till mobilen till 100% sen*/
+  color: white;
+}
+
+.klubbbody {
+  background-color: #c52291;
+}
+
+.om-klubb {
+  width: 50%;
+  color: white;
+}
+
+.gg {
+  color: #c52291;
+}
+
+#listor {
+  background-color: #f62ab5;
+  color: white;
 }
 
 .nav-item {
   font-size: 120%;
 }
 
+.img-brand {
+  width: 5%;
+  height: 5%;
+}
+
 @media screen and (max-width: 500px) {
   .startbody {
-    background-color: #d43131;
+    background-color: #c52291;
   }
   .sponsorer {
     margin-left: auto;
@@ -312,6 +344,16 @@ footer {
     margin-left: 3%;
     padding: 2%;
     margin-top: 2%;
+  }
+  /*KLUBB SIDAN*/
+  .om-klubb {
+    width: 100%;
+  }
+  .navbar-brand {
+    width: 60%;
+  }
+  .img-brand {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */

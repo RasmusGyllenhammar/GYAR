@@ -11,9 +11,13 @@
 <link rel="stylesheet" href="main.css">
 
 </head>
-<body>
+<body class="klubbbody">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/"><img src="ibkUtbySvart.png" style="width: 5%; height: 5%;"></a>
+        <a class="navbar-brand" href="/">
+         
+          <img src="ibkUtbySvart.png"  class="img-brand">
+        
+        </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,28 +53,178 @@
     
         </div>
       </nav>
+     
+        <div class="row">
+          <div class="om-klubb">
+          <div class="col">
+            <div class="gg">
+            1 of 2
+          </div>
+            <ul class="list-group">
+             
+              <li class="list-group-item" id="listor"> <h3>Om klubben</h3> <br> <p>Klubben startde 2020 under sommaren och har för nuvarande ett lag.
+                IBK Utby ska ge invånarna i Göteborgs kommun möjlighet att träna och spela innebandy. 
+              </p></li>
+              <div class="gg">
+                1 of 2
+              </div>
+              <li class="list-group-item" id="listor">
+                <h3>Avgifter</h3>
+              <br>
+              
+              <ul>
+                <li>  
+                <p>2900kr varav medlemsavgiften är 200kr och träningsavgiften är 2700kr. Därav licens på 340kr ingår</p>
+                </li>
+                <li>
+                  <p>Vid halvårsskiftet betalas halv avgift.</p>
+                </li>
+                <li>
+                  <p>Ev. övergångsavgift betalar föreningen, men avgiften ska vara betald innan övergången betalas. </p>
+                </li>
+              </ul>
+               
+                
+               
+                <h4>Stödmedlem</h4>
+                <p>300kr</p>
+                <p>100 kr(pensionärer)</p>
+               
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+          <div class="col">
+            <div class="gg">
+              1 of 2
+            </div>
+            <ul class="list-group">
+             
+              <li class="list-group-item" id="listor"> <h3>Detta är IBK Utby Empire</h3> 
+                <br>
+                 <p>Vårt herrlag spelar i division herr 6.</p>
+                 <p>Prioritet Serneke Arena är vår hemmaplan där vi tränar och spelar matcher. Hallen har en läktare för ca 500 personer och ett 50 tal ståplatser.
+                   Läktaren erbjuder även platser för personer med funktionsvariationer samt kameraplattformar. Hallen är 800kvm. och har 2 omklädningsrum i anslutning till hallen.</p>
+                   <p>Våra mål är att fortsätta utveckla klubben och nån gång kunna utöka våran verksamhet som t.ex flera lag inom föreningen.</p>
+            </li>
+              
+             
+            </ul>
+            <div class="gg">
+              1 of 2
+            </div>
+            <ul class="list-group" id="listor">
+            <div class="message-form">
+              <h3>Skriv i gästboken!</h3>
+            <form action="/klubb" method="POST">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit">Skicka post</button>
+            </form>
+          </div>
+            <div class="classForMessages">
+                <h3>Inlägg:</h3>
+                <div class="messages-div"></div>
+                <% for(let i = 0; i < message.length; i++) { %>
+                 
+                    <p> <%= message[i].email %> skrev: <br> <%= message[i].text %></p>
+                   
+                   
+                <% } %> 
+                
+            </div>
+          </ul>
+          </div>
+        </div>
+        
+     
+      <div class="klubb-utby"></div>
+      <div class="kostnader"></div>
+        
 
-
-
-
-    <form action="/klubb" method="post">
+    <!-- <form action="/klubb" method="post">
         <input type="email" name="email" id="">
     <input type="text" name="message">
     <button type="submit">Skicka post</button>
-    </form>
+    </form> -->
     
     
-    <div class="classForMessages">
-        <h1>MessageBoard:</h1>
-        <% for(let i = 0; i < message.length; i++) { %>
-         
-            <p> <%= message[i].email %> skrev: <br> <%= message[i].text %></p>
-           
-           
-        <% } %> 
-        
-    </div>
     
+    
+    
+    <!-- Footer -->
+    <footer class="navbar-dark text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Ibk Utby</h5>
+
+                  <p>
+                      <img src="ibkUtbySvart.png" width="40%">
+                  </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Sociala medier</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="#!" class="text-dark">Instagram</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Youtube</a>
+                      </li>
+
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-0">länkar</h5>
+
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" class="text-dark">Våra Stadgar</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">Svenska innebandyförbundet</a>
+                      </li>
+                      <li>
+                          <a href="#!" class="text-dark">H6 Serie</a>
+                      </li>
+
+                  </ul>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright:
+          <a class="text-dark" href="#">IBK UTBY EMPIRE</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
