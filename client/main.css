@@ -298,6 +298,8 @@ footer {
   width: 90%;
   /* får ändra till mobilen till 100% sen*/
   color: white;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .klubbbody {
@@ -325,6 +327,15 @@ footer {
 .img-brand {
   width: 5%;
   height: 5%;
+}
+
+/*Kalender*/
+/*Trupp*/
+.trupp-titel {
+  text-align: center;
+  background-color: red;
+  width: 100%;
+  /*Ändra på sne kanske?*/
 }
 
 @media screen and (max-width: 500px) {

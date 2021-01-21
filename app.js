@@ -46,8 +46,13 @@ app.get('/nyheter', (req, res) => {
 app.get('/kontakt', (req, res) => {
   res.render('pages/kontakt.ejs')
 })
+app.get('/kalender', (req, res) => {
+  res.render('pages/kalender.ejs')
+})
 
-
+app.get('/trupp', (req, res) => {
+  res.render('pages/trupp.ejs')
+})
 
 
 

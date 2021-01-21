@@ -310,6 +310,9 @@ footer {
 .message-form{
     width: 90%; /* får ändra till mobilen till 100% sen*/
     color: white;
+    padding-right: 15px;
+  padding-left: 15px;
+
 }
 .klubbbody{
     background-color: rgb(197,34,145);
@@ -334,6 +337,19 @@ footer {
     width: 5%;
     height: 5%;
 }
+
+/*Kalender*/
+
+/*Trupp*/
+.font-italic{
+    
+}
+.trupp-titel{
+    text-align: center;
+    background-color: red;
+    width: 100%; /*Ändra på sne kanske?*/
+}
+
 
 
 @media screen and (max-width: 500px) {
