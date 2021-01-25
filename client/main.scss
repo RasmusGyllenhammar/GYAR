@@ -341,13 +341,12 @@ footer {
 /*Kalender*/
 
 /*Trupp*/
-.font-italic{
-    
-}
+
 .trupp-titel{
     text-align: center;
-    background-color: red;
-    width: 100%; /*Ändra på sne kanske?*/
+    background-color: $pink;
+    width: 80%; /*Ändra på sne kanske?*/
+    margin: auto;
 }
 
 
@@ -383,6 +382,10 @@ footer {
     }
     .img-brand{
         width: 20%;
+    }
+    /*TRUPP*/
+    .trupp-titel{
+        width: 100%;
     }
 }
 

@@ -333,9 +333,10 @@ footer {
 /*Trupp*/
 .trupp-titel {
   text-align: center;
-  background-color: red;
-  width: 100%;
+  background-color: #f62ab5;
+  width: 80%;
   /*Ändra på sne kanske?*/
+  margin: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -365,6 +366,10 @@ footer {
   }
   .img-brand {
     width: 20%;
+  }
+  /*TRUPP*/
+  .trupp-titel {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
